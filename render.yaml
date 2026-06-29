@@ -22,6 +22,29 @@ services:
     #
     # You can define additional environment variables as needed.
     envVars:
+      - key: N8N_HOST
+        value: n8n-service-7etw.onrender.com
+    
+      - key: N8N_PROTOCOL
+        value: https
+    
+      - key: WEBHOOK_URL
+        value: https://n8n-service-7etw.onrender.com/
+    
+      - key: N8N_PORT
+        value: "5678"
+    
+      - key: NODE_ENV
+        value: production
+    
+      - key: GENERIC_TIMEZONE
+        value: Asia/Kolkata
+    
+      - key: NODE_OPTIONS
+        value: "--max-old-space-size=1024"
+    
+      - key: N8N_PROXY_HOPS
+        value: "1"
       # Generates a base64-encoded key for
       # encrypting credentials in n8n
       #
